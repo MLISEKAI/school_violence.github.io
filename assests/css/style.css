@@ -1,0 +1,394 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    /* Hành vi cuộn */
+    scroll-behavior:smooth;
+}
+.text-center {
+    text-align: center !important;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.colum {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.colum-full {
+    width: 100%;
+}
+
+.colum-third {
+    width: 33.3333%;
+}
+
+.colum-half {
+    width: 50%;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+/* Header */
+#header {
+    background-color: beige;
+    height: 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: 1% 10% 0;
+}
+/* End: Header */
+
+/* Begin: CSS Nav */
+.clear{
+    clear: both;
+}
+
+.text-white {
+    color: #ffff !important;
+}
+
+
+#nav{
+    display: inline-block;
+}
+
+#nav > li {
+    display: inline-block;
+
+}
+#nav li {
+    position: relative;
+
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav > li > a {
+    color: #000;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46.5px;
+    padding: 0 22px ;
+    display: inline-block;
+}
+
+#nav .subnav li:hover ,
+#nav > li:hover > a {
+    color: #000;
+    background-color: #cccc;
+}
+
+#nav .subnav {
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    display: none;
+    position: absolute;
+    background-color: #ffff;
+    list-style-type: none;
+    box-shadow: 0 0 10px rgba(0,0,0,3);
+}
+
+#nav .subnav a {
+    color: #000;
+    padding: 0 16px;
+    line-height: 38px;
+}
+/* End: Nav */
+
+
+/* Slider */
+#slider .login-btn:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+#slider .login-btn {
+    color: #000;
+    background-color: beige;
+    text-decoration: none;
+    padding: 0.9% 21px;
+    display: inline-block;
+    float: right;
+    border: none;
+    font-size: 18px;
+}
+
+#slider {
+    padding-top: 10vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+#slider .text-content
+{
+    position: relative;
+    color: #000;
+    top: 30%;
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    /* left: 0; */
+    /* right: 0; */
+    width: 100%;
+    text-align: center;
+}
+#slider img {
+    margin-bottom: 3vw;
+}
+
+#slider .text-time {
+    font-size: 25px;
+    font-weight: 500;
+
+}
+
+#slider .text-heading {
+    font-size: 60px;
+    margin: 45px auto 44px;
+    max-width: 14em;
+}
+
+#slider .text-gruop {
+    font-size: 25px;
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+#slider .text-description{
+    margin: 6vw auto 0;
+    max-width: 34em;
+    width: 44vw;
+    text-align: justify;
+    font-weight: 500;
+    line-height: 35px;
+}
+/* End: CSS Slider */
+
+
+/* Begin: CSS Content */
+.content-section {
+    width: 40%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto ;
+    padding: 64px 0 112px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 3vw;
+}
+
+#content .section-heading {
+    font-size: 65px;
+    font-weight: 500;
+    text-align: center;;
+    letter-spacing: 4px;
+    margin-top: 2.3em;
+    margin-bottom: 1.5em;
+}
+
+#content .about-text-header{
+    font-size: 30px;
+    margin: 45px 0px;
+}
+
+#content .about-text-body{
+    font-size: 25px;
+    margin: 30px 0px;
+}
+#content .about-text {
+    margin: 45px 0px;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 35px;
+}
+
+#content .about-img{
+text-align: center;
+margin: 50px 0px;
+}
+
+.call-to-action {
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+    margin-top: 25px;
+}
+
+.call-to-action:hover {
+    background-color: #2980b9;
+}
+/* End: CSS Content */
+
+
+/* Footer */
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+    background-color: #bfbfbf;
+}
+
+#footer .socials-list{
+    font-size: 24px;
+}
+
+#footer .socials-list a {
+    color:rgba(0, 0,0,0.6);
+    text-decoration: none;
+}
+
+#footer .copy-right a:hover,
+#footer .socials-list a:hover {
+    color:rgba(0, 0,0,0.4);
+}
+
+#footer .copy-right {
+    margin-top: 15px;
+    color: rgba(0, 0,0,0.6);
+}
+
+#footer .copy-right a {
+    color: rgba(0, 0,0,0.6);
+}
+/* End: Footer */
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.modal.open {
+    display: flex;
+}
+
+.modal-container {
+    background-color: #ffff;
+    width: 900px;
+    max-width: calc(100% - 42px);
+    min-height: 200px;
+    position: relative;
+    animation: modalFadeIn ease 0.5s;
+}
+
+.modal-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #ffff;
+    padding: 16px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.modal-header {
+    background-color: darkgreen;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: #ffff;
+}
+
+.modal-header-icon {
+    margin-right: 16px;
+}
+
+.modal-body {
+    padding: 16px;
+}
+
+.modal-label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.modal-input {
+    border: 1px solid #cccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+
+.buy-tickets {
+    background-color: darkgreen;
+    border: none;
+    color: #ffff;
+    width: 100%;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 18px;
+    cursor: pointer;
+}
+
+.buy-tickets:hover {
+    opacity: 0.9;
+}
+
+.modal-footer {
+    padding: 16px;
+    text-align: right;
+}
+
+.modal-footer a {
+    color: aqua;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-180px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* End: Modal */
